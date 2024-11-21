@@ -1,0 +1,148 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    /* Fontes do cloudflare: */
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+}
+
+body{
+    background: #202020;
+}
+
+header{
+    height: 90px;
+    background: #000;
+    color: #e0dede;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+main{
+    color: #ffffff;
+}
+
+form{
+    margin-top: 20px;
+}
+
+input[type=text], input[type=password], select, textarea{
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+    border: none;
+    margin: 5px 0 10px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+input[type=submit], button{
+    background-color: #df7d50;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    width: 70px;
+}
+
+input[type=submit]:hover, button:hover{
+    background-color: #8a4c2f;
+}
+
+select{
+    color: #c4c2c2;
+}
+
+.flex-bt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-ar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.repository{
+    background-color: aliceblue;
+    width: 450px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.repository header{
+    margin-bottom: auto;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.repository h4{
+    margin: auto;
+}
+
+#headChosed{
+    background-color: aliceblue;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 150px;
+    right: 110px;
+}
+
+#bodyChosed{
+    background-color: aliceblue;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 290px;
+    right: 52px;
+}
+
+#legChosed{
+    background-color: aliceblue;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 490px;
+    right: 100px;
+}
+
+.legoChosen img{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border: solid #000 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.legoChosen img:hover{
+    cursor: pointer;
+}
+.legoChosen img.active{
+    border-color: #49af06;
+}
+
+.legoMontado img{
+    width: 100%;
+}

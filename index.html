@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div style="position: fixed; margin-left: 100px;">
+            <h1>Projeto: Lego</h1>
+        </div>
+    </header>
+    <main style="position: fixed; margin-left: 100px;">
+        <div class="wrapper">
+            <div class="flex-bt align-center">
+                <form onsubmit="handleSubmitAddPart(event)">
+                    <label for="imgSource">Imagem:</label>
+                    <input type="text" id="imgSource" name="imgSource">
+                    <select name="body">
+                        <option value="Cabeça">Cabeça</option>
+                        <option value="Corpo">Corpo</option>
+                        <option value="Perna">Perna</option>
+                    </select>
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+        <div class="legoChosen">
+            <div class="repository">
+                <header><h4>Cabeças</h4></header>
+                <main id="headRepository"><img onclick="handleChosePart(event, 'headRepository')" class="part" src="https://cdn.sistemawbuy.com.br/arquivos/198d1b76323c979c329ad243b9c29157/produtos/WAE2TEI1/96fba156dcdd5d97306b7ffe2c9d00ed-60999e9083cfb_mini.png" alt="cabeça lego"></main>
+            </div>
+            <div class="repository">
+                <header><h4>Corpos</h4></header>
+                <main id="bodyRepository"><img onclick="handleChosePart(event, 'bodyRepository')" class="part" src="https://cdn.awsli.com.br/300x300/729/729561/produto/132738187/47f3c4bafc.jpg" alt="corpo lego"></main>
+            </div>
+            <div class="repository">
+                <header><h4>Pernas</h4></header>                
+                <main id="legRepository"><img onclick="handleChosePart(event, 'legRepository')" class="part" src="https://cdn.sistemawbuy.com.br/arquivos/198d1b76323c979c329ad243b9c29157/produtos/TEI7HOU5/d5b6f5df1d3540f5e152370db4634448-6099979e20140_mini.jpg" alt="perna lego"></main>
+            </div>
+        </div>
+        <div class="legoMontado">
+            <div id="headChosed">
+                <img src="" alt="cabeça do lego">
+            </div>
+            <div id="bodyChosed">
+                <img src="" alt="corpo do lego">
+            </div>
+            <div id="legChosed">
+                <img src="" alt="perna do lego">
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
